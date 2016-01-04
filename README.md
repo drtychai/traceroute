@@ -13,7 +13,7 @@ To trace the path from your local host to the target host, simply run the trace_
 Note: Due to the use of an ICMP socket, the scipt requires superuser privilige. 
 
 ```bash
-$sudo python trace_route.py www.ust.hk
+$ sudo python trace_route.py www.ust.hk
 1       192.168.1.1 : 192.168.1.1
 2       23.28.194.1 : d28-23-1-194.dim.wideopenwest.com
 3       76.73.172.181 : dynamic-76-73-172-181.knology.net
