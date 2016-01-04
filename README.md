@@ -2,7 +2,7 @@
 Simple multithreaded traceroute replica 
 
 <b>NAME</b> <br>
-&emsp tracer.py -- traces the route travelled to an IP address or host
+<&emsp> tracer.py -- traces the route travelled to an IP address or host
 
 <b>USAGE</b> <br>
 &emsp sudo python tracer.py HostName
