@@ -4,7 +4,7 @@ Simple multithreaded traceroute replica.
 
 ## Overview
 
-The tracer.py utility prints a list of each NEXT_HOP router from localhost to target IP address or Host.
+The trace_route.py utility prints a list of each NEXT_HOP router from localhost to target IP address or Host.
 
 ## Example
 
@@ -32,6 +32,46 @@ $ sudo python trace_route.py www.ust.hk
 16      * * * Request timed out
 17      143.89.14.2 : www.ust.hk
 ```
+
+Whenever a '* * * Request timed out' is printed, the program either did not receive an ICMP reply from a router or the route is blocked by a firewall. Below is an exmaple of a trace to Google's Public DNS server, 8.8.8.8. The route from my localhost is blocked by a firewall. 
+
+```bash
+$ sudo python trace_route.py 8.8.8.8
+1	192.168.1.1 : 192.168.1.1
+2	23.28.194.1 : d28-23-1-194.dim.wideopenwest.com
+3	76.73.172.181 : dynamic-76-73-172-181.knology.net
+4	76.73.167.65 : 76-73-167-65.knology.net
+5	76.73.166.126 : 76-73-166-126.knology.net
+6	76.73.166.125 : 76-73-166-125.knology.net
+7	69.73.0.139 : static-69-73-0-139.knology.net
+8	75.76.35.10 : dynamic-75-76-35-10.knology.net
+9	75.76.35.6 : dynamic-75-76-35-6.knology.net
+10	* * * Request timed out
+11	* * * Request timed out
+12	* * * Request timed out
+13	* * * Request timed out
+14	* * * Request timed out
+15	* * * Request timed out
+16	* * * Request timed out
+17	* * * Request timed out
+18	* * * Request timed out
+19	* * * Request timed out
+20	* * * Request timed out
+21	* * * Request timed out
+22	* * * Request timed out
+23	* * * Request timed out
+24	* * * Request timed out
+25	* * * Request timed out
+26	* * * Request timed out
+27	* * * Request timed out
+28	* * * Request timed out
+29	* * * Request timed out
+30	* * * Request timed out
+31	* * * Request timed out
+```
+
+We see that our program doesn't receive and ICMP reply and attempts to querry the next-hop router in the path to 8.8.8.8. It continues this until a maximum hop length is reached. 
+
 
 ## Getting Started
 
