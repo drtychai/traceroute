@@ -33,7 +33,7 @@ $ sudo python trace_route.py www.ust.hk
 17      143.89.14.2 : www.ust.hk
 ```
 
-Whenever a '* * * Request timed out' is printed, the program either did not receive an ICMP reply from a router or the route is blocked by a firewall. Below is an exmaple of a trace to Google's Public DNS server, 8.8.8.8. The route from my localhost is blocked by a firewall. 
+Whenever a ```* * * Request timed out``` is printed, the program either did not receive an ICMP reply from a router or the route is blocked by a firewall. Below is an exmaple of a trace to Google's Public DNS server, 8.8.8.8. The route from my localhost is blocked by a firewall. 
 
 ```bash
 $ sudo python trace_route.py 8.8.8.8
