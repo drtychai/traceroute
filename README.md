@@ -70,7 +70,7 @@ $ sudo python trace_route.py 8.8.8.8
 31	* * * Request timed out
 ```
 
-We see that our program doesn't receive and ICMP reply and attempts to querry the next-hop router in the path to 8.8.8.8. It continues this until a maximum hop length is reached. 
+We see that our program stops receiving ICMP replys and attempts to querry the next-hop router in the path to 8.8.8.8. It continues this until a maximum hop length is reached. 
 
 
 ## Getting Started
