@@ -1,14 +1,14 @@
 # traceroute
 Simple multithreaded traceroute replica 
 
-NAME <br>
+<b>NAME</b> <br>
 <t>tracer.py -- traces the route travelled to an IP address or host
 
-USAGE <br>
+<b>USAGE</b> <br>
 <t> sudo python tracer.py HostName
 
-DESCRIPTION <br>
+<b>DESCRIPTION</b> <br>
 <t> The tracer.py utility prints a list of each NEXT_HOP router from localhost to target IP address or Host
 
-SEE ALSO <br>
+<b>SEE ALSO</b> <br>
 <t> https://en.wikipedia.org/wiki/Traceroute
