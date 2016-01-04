@@ -10,7 +10,7 @@ The trace_route.py utility prints a list of each NEXT_HOP router from localhost 
 
 To trace the path from localhost to the target host, simply run the trace_route.py file with the target host as an argument. As shown below, we will trace the path from localhost to www.ust.hk, the web server at Hong Kong University of Science and Technology.
 
-Note: Due to the use of an ICMP socket, the scipt requires superuser privilige. 
+Note: Due to the use of a raw socket, the scipt requires superuser privilige. 
 
 ```bash
 $ sudo python trace_route.py www.ust.hk
