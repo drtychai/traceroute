@@ -75,7 +75,7 @@ We see that our program stops receiving ICMP replys and attempts to querry the n
 
 ## Getting Started
 
-
+You can download this program and begin tracing immediately with python 2.7 as shown above. If, like me, you would rather a shorter command, an alias can be made for *nix systems by adding ```alias trace_route="sudo /path/to/file.py"``` to your ```~/.bash_profile``` or ```~/.bashrc```. With this addition, you can simply run the program as ```trace_route hostname```.
 
 
 ## License
