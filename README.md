@@ -4,7 +4,7 @@ Simple multithreaded traceroute replica.
 
 ## Overview
 
-The trace_route.py utility prints a list of each NEXT_HOP router from localhost to target IP address or Host.
+The trace_route.py utility prints a list of each NEXT_HOP router from localhost to target IP address/host.
 
 ## Example
 
